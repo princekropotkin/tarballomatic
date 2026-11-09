@@ -1,2 +1,0 @@
-*.hpkg
-package/stage/
