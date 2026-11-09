@@ -1,0 +1,23 @@
+SubDir HAIKU_TOP src add-ons tracker tarballomatic ;
+
+UsePrivateHeaders shared ;
+
+Application TarballOMatic :
+	GenericThread.cpp
+	TarballOMatic.cpp
+	TarballOMaticActivity.cpp
+	TarballOMaticWindow.cpp
+	TarballThread.cpp
+
+	: be tracker [ TargetLibsupc++ ] localestub
+	: TarballOMatic.rdef
+;
+
+DoCatalogs TarballOMatic :
+	x-vnd.haiku.tarball-o-matic
+	:
+	TarballOMatic.cpp
+	TarballOMaticWindow.cpp
+	TarballThread.cpp
+;
+
