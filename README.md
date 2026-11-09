@@ -39,7 +39,7 @@ make
 ```
 
 The binary appears in `objects.*/` next to the sources. Copy it to
-`~/config/non-packaged/add-ons/tracker/`.
+`~/config/non-packaged/add-ons/Tracker/`.
 
 **Inside the Haiku source tree**
 
@@ -54,7 +54,7 @@ The binary appears in `objects.*/` next to the sources. Copy it to
 3. From the root of the tree run `jam -q TarballOMatic`.
 4. Copy the resulting binary (look under
    `generated/objects/haiku/<arch>/release/add-ons/tracker/tarballomatic/`)
-   to `~/config/non-packaged/add-ons/tracker/`.
+   to `~/config/non-packaged/add-ons/Tracker/`.
 
 The default keyboard shortcut is Opt+Alt+O. It is defined in
 `tarballomatic/TarballOMatic.rdef` (`BEOS:default_shortcut`); change it there
