@@ -1,0 +1,3 @@
+"application/x-xz"	.tar.xz	"bsdtar -Jtvf %s"	"bsdtar -Jxf %s"
+"application/x-xz"	.txz	"bsdtar -Jtvf %s"	"bsdtar -Jxf %s"
+""	.tar.bz2	"bsdtar -jtvf %s"	"bsdtar -jxf %s"

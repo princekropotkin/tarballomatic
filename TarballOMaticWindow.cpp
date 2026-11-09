@@ -1,12 +1,12 @@
 /*
- * Copyright 2003-2026, Haiku, Inc. All Rights Reserved.
+ * Copyright 2003-2009, Haiku, Inc. All Rights Reserved.
+ * Copyright 2026, Prince Kropotkin. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
  *		Jonas Sundström, jonas@kirilla.com
  *		Prince Kropotkin, haiku@kropotk.in
  */
-
 
 
 #include "TarballOMaticWindow.h"

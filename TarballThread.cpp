@@ -1,13 +1,12 @@
 /*
- * Copyright 2003-2026, Haiku, Inc. All Rights Reserved.
+ * Copyright 2003-2009, Haiku, Inc. All Rights Reserved.
+ * Copyright 2026, Prince Kropotkin. All Rights Reserved.
  * Distributed under the terms of the MIT License.
  *
  * Authors:
  *		Jonas Sundström, jonas@kirilla.com
  *		Prince Kropotkin, haiku@kropotk.in
  */
-
-
 
 #include "TarballThread.h"
 
@@ -299,12 +298,9 @@ TarballThread::_PipeCommand(int argc, const char** argv, int& in, int& out,
 		int inPipe[2], outPipe[2], errPipe[2];
 
 		// Create new pipe FDs as stdin, stdout, stderr
-		if (pipe(inPipe) < 0)
-			goto err1;
-		if (pipe(outPipe) < 0)
-			goto err2;
-		if (pipe(errPipe) < 0)
-			goto err3;
+		if (pipe(inPipe) < 0)	goto err1;
+		if (pipe(outPipe) < 0)	goto err2;
+		if (pipe(errPipe) < 0)	goto err3;
 
 		errno = 0;
 

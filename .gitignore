@@ -1,0 +1,7 @@
+generated/
+*.o
+*.rsrc
+*.catalog
+*~
+.DS_Store
+objects.*/

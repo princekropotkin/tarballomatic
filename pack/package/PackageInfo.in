@@ -1,0 +1,29 @@
+name			tarballomatic
+version			@VERSION@-@REVISION@
+architecture	@ARCH@
+summary			"Tracker add-on that packs files into .tar.xz keeping BFS attributes"
+description		"Tarball-O-Matic is a Tracker add-on based on Zip-O-Matic. It \
+packs files and folders into .tar.xz archives using bsdtar, so BFS file \
+attributes (including those larger than 64 KB) are preserved. The package \
+also adds Expander rules that unpack .tar.xz, .txz and .tar.bz2 with bsdtar \
+instead of GNU tar, which loses attributes."
+packager		"Prince Kropotkin <prince@kropotk.in>"
+vendor			"Haiku Project"
+copyrights		{
+	"2003-2009 Haiku, Inc."
+	"2026 Prince Kropotkin"
+}
+licenses		{
+	MIT
+}
+urls			{
+	"https://github.com/princekropotkin/tarballomatic"
+}
+provides		{
+	tarballomatic = @VERSION@
+	add_on:tracker:TarballOMatic = @VERSION@
+}
+requires		{
+	haiku
+	cmd:bsdtar
+}
